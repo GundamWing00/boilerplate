@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third Assignment</title>
+</head>
+<body style="background-color: #fff2e6">
+    <h2>Third Assignment</h2>
+    <hr>
+    <a href="/index.html">HOME</a>
+    <br>
+        <a href="/pages/assignment01.html">My First Assignment Page.</a>
+    <br>
+        <a href="/pages/assignment02.html">My Second Assignment Page​.</a>
+    <br>
+        <a href="/pages/final-assignment.html">My Final Assignment Page​.</a>
+    <hr>
+    <h3>Assignment(Links & Images):</h3>
+    <br>
+    <ul>
+        <h4>Steps: </h4>
+        <br>
+        <li>Create a new directory named links-and-images</li>
+        <li>Within that directory, create a new file named index.html</li>
+        <li>Fill in the usual HTML boilerplate</li>
+        <li>Set the title to “Links & Images”</li> 
+        <li>Finally, add the following h1 to the body: &lt;h1&gt;Homepage&lt;/h1&gt;</li>
+        <li>Create another HTML file named about.html</li>
+        <li>Back in the index page, add the following anchor element below the &lt;h1&gt;
+            element: &lt;a href=”https://theuselessweb.com/”>click me</a&gt;
+            &lt;a href="about.html">About&lt;/a&gt;</li>  
+        <li>Open the index file in a browser and click on the About link to make sure it is all
+            wired together correctly. Clicking the link should go to the empty about page you
+            just created (you can fill it in if you like)</li>   
+        <li>Create a directory named pages within the links-and-images directory and move
+            the about.html file into this new directory. Refresh the index page in the browser
+            and then click on the about link. It will now be broken. This is because the
+            location of the About page file has changed. To fix this, you just need to update
+            the about link href value to include the pages directory since that is the new
+            location of the about file relative to the index file. &lt;a
+            href="./pages/about.html">About&lt;/a&gt;</li>
+        <li>In many cases, this will work just fine; however, you can still run into unexpected
+            issues with this approach. Prepending ./ before the link will in most cases
+            prevent such issues. By adding ./ you are specifying to your code that it should
+            start looking for the file/directory relative to the current directory. You can also
+            add a link to get back from the About page to your homepage</li>
+        <li>To use images on your own websites, you can use a relative path:</li>    
+        <li>Create a new directory named images within the links-and-images
+            project</li>
+        <li>Next, download any image .jpg/.png and move it into the images
+            directory you just created</li>
+        <li>Rename the image to first-img.jpg/.png</li>
+        <li>Add the image to the index.html file:
+            &lt;img src="images/first-img.jpg"&gt;
+        </li>
+        <li>Save the index.html file and open it in a browser to view your image in all
+            its glory. Remember to use ./ before the images/first-img.jpg if your
+            image isn’t loading</li>
+        <li>As a bit of practice, add an alt attribute to the first-img you added to the
+            links-and-images project.</li>       
+    </ul>
+    <hr>
+
+   <h1><a href="/links-and-images/index.html">Click Here</a></h1> 
+
+    <pre>
+       <h4>I hope you smile today.</h4>
+        
+                            __ooooooooo__
+                         oOOOOOOOOOOOOOOOOOOOOOo
+                     oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+                  oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+                oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+              oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+             oOOOOOOOOOOO*  *OOOOOOOOOOOOOO*  *OOOOOOOOOOOOo
+            oOOOOOOOOOOO      OOOOOOOOOOOO      OOOOOOOOOOOOo
+            oOOOOOOOOOOOOo  oOOOOOOOOOOOOOOo  oOOOOOOOOOOOOOo
+           oOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOo
+           oOOOO     OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO     OOOOo
+           oOOOOOO OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO OOOOOOo
+            *OOOOO  OOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO  OOOOO*
+            *OOOOOO  *OOOOOOOOOOOOOOOOOOOOOOOOOOOOO*  OOOOOO*
+             *OOOOOO  *OOOOOOOOOOOOOOOOOOOOOOOOOOO*  OOOOOO*
+              *OOOOOOo  *OOOOOOOOOOOOOOOOOOOOOOO*  oOOOOOO*
+                *OOOOOOOo  *OOOOOOOOOOOOOOOOO*  oOOOOOOO*
+                  *OOOOOOOOo  *OOOOOOOOOOO*  oOOOOOOOO*
+                     *OOOOOOOOo           oOOOOOOOO*
+                         *OOOOOOOOOOOOOOOOOOOOO*
+                              ""ooooooooo""
+        </pre>
+
+</body>
+</html>
